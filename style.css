@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@font-face {
+    font-family:'butter' ;
+    src: url(fonts/Butter\ Food.ttf) format('truetype');
+}
+@font-face {
+    font-family:'happy food' ;
+    src: url(fonts/Happy\ Food.ttf) format('truetype');
+}
+body {
+    margin: auto;
+    background-color: #b3f09093;
+    width: 29.3rem;
+    position: relative;
+    font-family: 'happy food';
+    padding-left: 1rem;
+    border-color: #54210D;
+    border-radius: 1rem;
+    
+    
+}
+/**Título e tamanho das letras principais**/
+h1 {
+    margin: auto;
+    text-align: center;
+}
+h2 {
+    margin: auto;
+    font-size: 1.3rem;
+   margin-top: 1rem;
+}
+
+/**Valor calculado de saldo em carteira e total**/
+#totalDaCompra {
+    margin-top: 1rem;
+}
+span#total {
+    margin: auto;
+    color: #220c03;
+}
+
+/* buttons */
+input[type = 'button'] {
+    background-color: rgb(201, 248, 213);
+    color: #4f7c49;
+    border-radius: 10px;
+    border: solid;
+    border-width: 1.5px;
+    cursor: pointer;
+}
+input[type = 'button']:hover {
+    background-color: lightgreen;
+    transition: 0.5s;
+}
+
+input[type = 'text'] {
+    background-color: rgb(231, 230, 230);
+    font-family: monospace;
+    border-radius: 2px;
+    border-width: 1px;
+}
+/** SALDO EM CARTEIRA **/
+input#input-saldo-em-carteira {
+    margin: auto;
+    width: 6.5rem;
+    height: 1.8rem;
+} 
+h2#saldo-em-carteira {
+    margin: auto;
+    position:relative;
+    left: 20rem;
+    top: -7.8rem;
+    color: green;
+}
+.informar-sobre-saldo {
+    position: relative;
+    right: 0.5rem;
+
+    margin: auto;
+    padding-left: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #54210D;
+    width: 28rem;
+    border-radius: 1rem;
+    background-color: rgba(94, 255, 0, 0.329);
+    box-shadow: 1px 1px 5px 2px #54210D;
+}
+.informar-sobre-saldo h2:first-child {
+    position: relative;
+}
+.informar-sobre-saldo h2:last-child {
+    position: relative;
+    margin-left: 13rem;
+    margin-top:-6.2rem ;
+    display: none;
+}
+input#confirmar-saldo {
+    position: relative;
+    text-align: center;
+    left: 20rem;
+    bottom: 8px;
+    padding-bottom:0.5rem;
+    height: 2rem;
+    width: 2.5rem;
+}
+input#limpar-lista {
+    position:relative;
+    left: 19.8rem;
+    height: 2rem;
+    width: 84px;
+    bottom: 5px;
+    background-color: rgba(196, 75, 75, 0.74);
+    color:black;
+}
+
+
+/*adicionar mais saldo*/
+input#adicionar-saldo-extra {
+    position: relative;
+    left: -2.5rem;
+    top: 1px;
+    font-size: 1rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+input#input-adicionar-saldo-extra{
+    position: relative;
+    left: -2rem;
+    text-align: center;
+    width: 6rem;
+    height: 1.5rem;
+}
+input#confirmar-saldo-extra-adicionado {
+    position: relative;
+    left:4.8rem;
+    bottom: 1.7rem;
+    width: 3rem;
+    height: 1.7rem;
+}
+#inputs-adicionar-mais-saldo {
+    position: relative;
+    width: 25%;
+    bottom: 2rem;
+    left: 3rem ;
+}
+#inputs-adicionar-mais-saldo > #input-adicionar-saldo-extra, #confirmar-saldo-extra-adicionado {
+    display: none;
+}
+#inputs-adicionar-mais-saldo:hover > #input-adicionar-saldo-extra {
+    display: block;
+}
+#inputs-adicionar-mais-saldo:hover > #confirmar-saldo-extra-adicionado {
+    display: block;
+}
+
+#limpar-lista:hover {
+    background-color: brown;
+}
+
+
+/**PRODUTOS, QUANTIDADE, PREÇO E INSERIR PRODUTO**/
+
+input#input-produto {
+    margin: auto;
+    background-color: #a1614852;
+    width: 50%;
+    height: 2rem;
+    font-family: monospace;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #54210D;
+}
+input#input-quantidade {
+    margin: auto;
+    width: 8%;
+    height: 1.9rem;
+    background-color: #a1614852;
+    font-family: monospace;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #54210D;
+}
+input#input-preco {
+    margin: auto;
+    width: 10%;
+    height: 2rem;
+    background-color: #a1614852;
+    font-family: monospace;
+    border-radius: 5px;
+}
+input#add-produto {
+    position: relative;
+    bottom: -0.57rem;
+    font-size: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+input#excluir-item {
+    position: relative;
+    top: 1rem;
+    left: 0.8rem;
+    background-color: rgba(196, 75, 75, 0.589);
+    color: black;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+input#excluir-item:hover {
+    background-color: rgb(245, 105, 105);
+}
+
+/**itens inseridos na lista de compras**/
+p {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1rem;
+}
+/**estrutura de onde entrará os itens da lista de compras**/
+#recebe-info {
+    margin-top: 0.7rem;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: black;
+    border-radius: 5px;
+    height: 100%;
+    width: 28.30rem;
+    padding-top: 2rem;
+}
+
+/**forma a tabela de identificadores da lista**/
+.identificadores {
+    background-color: rgba(94, 255, 0, 0.329);
+    width: 28.5rem;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    border-bottom: hidden;
+    box-shadow: 1px 1px 5px 2px #54210D;
+
+}
+.identificador {
+    margin:auto;
+    flex-direction: row;
+    display: inline-flex;
+    flex-wrap:wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    
+}
+#identificador-produto {
+margin-left: 1rem;
+}
+#identificador-quantidade {
+    margin-left: 3.5rem;
+}
+#identificador-preco {
+    margin-left: 3.5rem;
+}
+
+/**tipo de item que foi adicionado à lista**/
+#produto-adicionado {
+    padding: 0.5rem;
+    position: relative;
+    bottom: 2.5rem;
+}
+#quantidade-adicionada {
+    position: relative;
+    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: wrap;
+    left: 13rem;
+    bottom: 6rem;
+}
+#preco-adicionado {
+    position: relative;
+    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: wrap;
+    left:19.5rem;
+    bottom: 6rem;
+}
+

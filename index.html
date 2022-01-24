@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <h1>Lista de Compras:</h1>
+    <div class="informar-sobre-saldo">
+        <h2>Saldo em Carteira:
+            <input id="input-saldo-em-carteira" type="text" placeholder="Quanto deseja gastar?">
+            <br>
+            <input type="button" value="👍" id="confirmar-saldo" class="button">
+            <input type="button" value="Limpar Lista" id="limpar-lista">
+            <div id="inputs-adicionar-mais-saldo">
+                <input type="button" value="Adicionar mais saldo" id="adicionar-saldo-extra">
+                <input type="text" id="input-adicionar-saldo-extra" placeholder="Quanto?"> <span></span>
+                <input type="button" value="Ok" id="confirmar-saldo-extra-adicionado">
+            </div>
+        </h2>
+    
+        <h2 id="saldo-em-carteira"></h2>
+    </div>
+    <div id="inputs">
+        <input type="text" id="input-produto" placeholder="Produto">
+        <input type="number" id="input-quantidade" placeholder="Qtd">
+        <input type="text" id="input-preco" placeholder="Preço">
+        <input type="button" id="add-produto" value="+" class="button">
+    </div>
+    <div id="total-da-compra">
+        <h2>Total da Compra: <span id="total">R$0,00</span></h2>
+    </div>
+    <div class="identificadores">
+        <div id="identificador-produto" class="identificador">
+            <h3>Produto</h3>
+        </div>
+        <div id="identificador-quantidade" class="identificador">
+            <h3>Quantidade</h3>
+        </div>
+        <div id="identificador-preco" class="identificador">
+            <h3>Preço Un</h3>
+        </div>
+    </div>
+    
+
+    <div id="recebe-info"></div>
+</body>
+</html>
+<script src="inputs.js"></script>
+<script src="localstorageAtalhos.js"></script>
+<script src="adicionarProdutos.js"></script>
+<script src="renderizar.js"></script>
+<script src="acessoLocalStorage.js"></script>
+<script src="funcionalidades.js"></script>
+
